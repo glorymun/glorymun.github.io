@@ -58,3 +58,16 @@ function showSlides(n) {
 window.addEventListener('DOMContentLoaded', function() {
   showSlides(slideIndex);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Select all question containers inside the FAQ section
+  const faqQuestions = document.querySelectorAll("[unique-script-id='w-w-dm-id'] .faq .faq-question-container");
+
+  faqQuestions.forEach(function(question) {
+    question.addEventListener('click', function() {
+      // Toggle the 'active' class on the parent .faq element
+      const faqItem = question.closest('.faq');
+      faqItem.classList.toggle('active');
+    });
+  });
+});
