@@ -20,15 +20,29 @@
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #221729;
     font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 20px;
 }
- .langselector h1 {
-	  line-height: 1.2;
- }
+
+h1, h3, h4, h5, h6 {
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+}
+
+h2 {
+  font-family: Playfair Display;
+}
+/* Special style for #GLORYMUN */
+.glorymun-special {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-style: ;
+    color: #D6C2F0;
+    text-shadow: 0 2px 8px rgba(128,43,177,0.15);
+}
 
 a {
 	text-decoration: none;
@@ -147,8 +161,6 @@ header {
     .cloas h1 {
     	font-size: 3rem;
     	color: var(--textcolor);
-		letter-spacing: 0.1em;
-
     }
 
     .cloas p {
@@ -322,6 +334,7 @@ header {
 .countdown .title h2 {
   color: var(--soft-red);
   font-size: 3rem;
+  font-family: Montserrat;
   line-height: 2.4em;
   position: relative;
   overflow: hidden;
