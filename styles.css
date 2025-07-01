@@ -703,3 +703,41 @@ footer {
     margin: 0;
   }
 }
+
+@media (max-width: 600px) {
+  .countdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2em 0.5em;
+    justify-items: center;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .countdown .count {
+    margin-right: 0 !important;
+    margin-bottom: 0;
+    width: auto;
+  }
+  .countdown .title {
+    width: 4.5em;
+    height: 4.5em;
+  }
+  .countdown .title h2 {
+    font-size: 2rem;
+    line-height: 2.2em;
+  }
+  .slideshow-container {
+    max-width: 100vw;
+    border-radius: 0;
+  }
+  .map {
+    width: 100% !important;
+    height: 250px !important;
+    min-width: 0;
+    max-width: 100vw;
+    display: block;
+  }
+  .venue {
+    padding-inline: 0.5rem;
+  }
+}
