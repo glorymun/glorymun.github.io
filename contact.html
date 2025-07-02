@@ -21,19 +21,20 @@
 				<li> 
 					<a href="./index.html">Homepage</a>
 				</li>
-        		<li>
-				<li>
-					<a href="./academics.html">Academics</a> 
-				</li>
+        <li>
 				<li> 
-					<a href="./events.html">Events</a>
+					<a href="./academics.html">Academics</a>
 				</li>
 				<li>
-					<a href="./faq.html">FAQ</a>
+					<a href="./events.html">Events</a> 
 				</li>
 				<li>
-					<a href="./contact.html">Contact Us</a> 
+					<a href="./register.html">Registiration</a>
 				</li>
+				<li>
+					<a href="./faq.html">FAQ</a> 
+				</li>
+
 			</ul>
 			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f1f1f1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -42,18 +43,26 @@
 	</header>
 	
     <main>
-		<section class="faqcont">
-			<div class="faq_3" unique-script-id="w-w-dm-id">
-			<section class="cloas countdownerbg">
-					<h1><span>Register to</span> <span class="glorymun-special">#GloryMUN</span></h1>
-			</section>	
-			<section class="cloas">
-				<div class="register-btns" style="text-align:center; margin-bottom:2em;">
-					<button class="btn-primary" id="delegateBtn">Delegate Registration</button>
-					<button class="btn-primary" id="academicBtn">Organization Registration</button>
-				</div>
-				<iframe class="registerer" id="registerForm" style="display:none;" src="" frameborder="0" marginheight="0" marginwidth="0">Register form is loading...</iframe>			
-			</section>		
+        <section class="contact-container">
+            <h1 class="contact-title">Contact Us</h1>
+            <div class="contact-info">
+                <div class="contact-method">
+                    <img src="./src/img/glorypurple.jpeg" alt="Instagram" class="contact-icon">
+                    <div>
+                        <h2>Instagram</h2>
+                        <a href="https://www.instagram.com/glorymun25/" target="_blank" class="contact-link">@glorymun25</a>
+                    </div>
+                </div>
+				<div class="contact-method">
+                    <img src="./src/img/glorypurple.jpeg" alt="Mail" class="contact-icon">
+                    <div>
+                        <h2>Mail</h2>
+                        <a href="mailto:munglory0@gmail.com" target="_blank" class="contact-link">Click to Mail Us</a>
+                    </div>
+                </div>
+                <!-- Add more contact methods here if needed -->
+            </div>
+        </section>
     </main>
 	
 
@@ -62,18 +71,6 @@
 		Website made by <a href="kaannabdullah.github.io">Abdullah Kaan &lt;3</a>
 		<br> Image credit to pexels-michael-d-beckwith
 	</footer>
-	<script>
-		const delegateForm = "https://docs.google.com/forms/d/e/1FAIpQLSe3nx8dPexzBuhal5OkGodxtYC6C9nS-iJ5BaHM0MbFMCzLuQ/viewform?embedded=true";
-		const academicForm = "https://docs.google.com/forms/d/e/1FAIpQLSexoeqXkgy4Oefj8uInBHYdPVZFgRUNbJA8bX4QUcWGg7fzWw/viewform?embedded=true";
-		const iframe = document.getElementById('registerForm');
-		document.getElementById('delegateBtn').onclick = function() {
-			iframe.src = delegateForm;
-			iframe.style.display = 'block';
-		};
-		document.getElementById('academicBtn').onclick = function() {
-			iframe.src = academicForm;
-			iframe.style.display = 'block';
-		};
-	</script>
+	
 </body>
 </html>
